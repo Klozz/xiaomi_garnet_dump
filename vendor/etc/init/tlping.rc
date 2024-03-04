@@ -1,0 +1,4 @@
+service tlping /vendor/bin/tlping -s
+    user root
+    group system
+    disabled
