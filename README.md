@@ -1,0 +1,14 @@
+# missi_phone_cn-user 14 UKQ1.231003.002 V816.0.1.0.UNRCNXM release-keys
+- manufacturer: xiaomi
+- platform: parrot
+- codename: garnet
+- flavor: missi_phone_cn-user
+- release: 14
+- id: UKQ1.231003.002
+- incremental: V816.0.1.0.UNRCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/garnet/garnet:12/SKQ1.230401.001/V816.0.1.0.UNRCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi_phone_cn-user-14-UKQ1.231003.002-V816.0.1.0.UNRCNXM-release-keys
+- repo: xiaomi_garnet_dump

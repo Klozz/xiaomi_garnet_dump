@@ -1,0 +1,16 @@
+## wait load_bpf_programs finish
+# on property:bpf.progs_loaded=1
+#    start miui_bpf_dispatcher
+
+on property:sys.boot_completed=1
+    chmod 0755 /sys/kernel/tracing
+    chmod 0777 /sys/kernel/tracing/kprobe_events
+    chmod 0777 /sys/kernel/tracing/uprobe_events
+    setprop sys.miui_bpf_ready 1
+
+service miui_bpf_dispatcher /system_ext/bin/miuibpfdispatcher
+    user root
+    group system cache log everybody
+    disabled
+    socket miuibpfdispatcher stream 0666 root system
+    socket miuibpfservice stream 0660 root system

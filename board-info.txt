@@ -1,0 +1,3 @@
+require version-baseband=3.1.1.c1-00014-NETRANI_GENALL_PACK-1.49392.15
+require version-trustzone=TZ.XF.5.18-40341-4
+require version-vendor=1705761109
